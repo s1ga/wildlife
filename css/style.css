@@ -5,8 +5,50 @@ body {
 
 .container {
     width: 1200px;
+    margin: 0 auto;
 }
 
 .hero__wrapper {
     background: #02160b url('../img/bg.jpg');
+    color: #f7f7f7;
+    padding-top: 19px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}  
+
+.logo__img {
+    display: block;
+}
+
+.logo__text {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.nav {
+
+}
+
+.nav__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav__list__item {
+    font-size: 23px;
+}
+
+.btn {
+    border: 2px solid #cd6326;
+    padding: 5px 26px;
 }
