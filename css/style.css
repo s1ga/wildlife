@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     width: 1440px;
+    font-size: 18px;
 }
 
 .container {
@@ -58,13 +59,28 @@ body {
 }
 
 .survival__title {
-
+    color: #cd6326;
+    font-size: 48px;
+    letter-spacing: 2px;
 }
 
 .survival__text {
-
+    width: 274px;
+    line-height: 27px;
 }
 
 .survival__btn {
-    
+    padding: 16px 42px;
+    background-color: #cd6326;
+    border-radius: 5px;
+    transition: background-color .3s ease-in;
+}
+
+.survival__btn:hover {
+    background-color: #e39128;
+    cursor: pointer;
+}
+
+.survival__btn:visited {
+    background-color: #8f5613;
 }
