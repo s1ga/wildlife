@@ -108,3 +108,24 @@ body {
 .survival__btn:visited {
     background-color: #8f5613;
 }
+
+.main__wrapper {
+    background-color: #ccc;
+    color: #333;
+}
+
+.latest-articles {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.latest-articles__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}   
+
+.latest-articles__subtitle {
+    font-size: 24px;
+    color: #666;
+    /* margin: 0; */
+}
