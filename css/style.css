@@ -132,9 +132,33 @@ body {
     margin-bottom: 120px;
 }
 
-.latest-articles__article__wrapper {
+.latest-articles__wrapper {
     display: grid;
-    grid-template-columns: .26fr repeat(3, 1fr) .26fr;
+    grid-template-columns: .1fr 1fr .1fr;
+}
+
+.latest-artcicles__article__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.latest-articles__article {
+    text-align: center;
+    color: #f7f7f7;
+    /* position: relative; */
+}
+
+.latest-articles__article__title {
+    font-size: 24px;
+    font-weight: normal;
+    /* position: absolute;
+    bottom: 70px;
+    left: 120px */
+}
+
+.latest-articles__article__text {
+    font-size: 17px;
 }
 
 .latest-articles__slider__img {
