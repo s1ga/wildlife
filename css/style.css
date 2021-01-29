@@ -2,7 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     width: 1440px;
     font-size: 18px;
-    font-weight: 400;
     box-sizing: border-box;
 }
 
@@ -20,7 +19,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    margin-bottom: 125px;
+    margin-bottom: 110px;
 }
 
 .logo {
@@ -36,7 +35,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     font-size: 32px;
-    margin-top: 11px;
+    margin-top: 6px;
 }
 
 .nav {
@@ -46,7 +45,7 @@ body {
 .nav__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 130px);
+    grid-template-columns: repeat(4, 8.485vw);
     justify-items: center;
 }
 
@@ -75,20 +74,21 @@ body {
 }
 
 .survival {
-    padding-bottom: 255px;
+    padding-bottom: 252px;
 }
 
 .survival__title {
     color: #cd6326;
     font-size: 48px;
+    font-weight: normal;
     letter-spacing: 2px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 }
 
 .survival__text {
     width: 274px;
     line-height: 27px;
-    margin-bottom: 69px;
+    margin-bottom: 63px;
 }
 
 .survival__btn {
