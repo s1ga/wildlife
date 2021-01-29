@@ -116,16 +116,29 @@ body {
 
 .latest-articles {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 121px;
 }
 
 .latest-articles__title {
     font-size: 48px;
-    margin-bottom: 20px;
+    font-weight: normal;
+    margin-bottom: 19px;
 }   
 
 .latest-articles__subtitle {
     font-size: 24px;
+    font-weight: normal;
     color: #666;
-    /* margin: 0; */
+    margin-bottom: 120px;
+}
+
+.latest-articles__article__wrapper {
+    display: grid;
+    grid-template-columns: .26fr repeat(3, 1fr) .26fr;
+}
+
+.latest-articles__slider__img {
+    display: block;
+    align-self: center;
+    margin-bottom: 48px;
 }
