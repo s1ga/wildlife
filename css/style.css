@@ -117,6 +117,7 @@ body {
 .latest-articles {
     text-align: center;
     padding-top: 121px;
+    margin-bottom: 150px;
 }
 
 .latest-articles__title {
@@ -140,13 +141,16 @@ body {
 .latest-artcicles__article__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
 }
 
 .latest-articles__article {
     text-align: center;
     color: #f7f7f7;
     /* position: relative; */
+}
+
+.latest-articles__article:hover {
+    /* cursor: pointer; */
 }
 
 .latest-articles__article__title {
@@ -165,4 +169,10 @@ body {
     display: block;
     align-self: center;
     margin-bottom: 48px;
+    transition: opacity .2s ease-out;
+}
+
+.latest-articles__slider__img:hover {
+    cursor: pointer;
+    opacity: .5;
 }
