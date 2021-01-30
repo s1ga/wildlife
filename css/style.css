@@ -211,3 +211,29 @@ body {
     cursor: pointer;
     background-color:#e39128;
 }
+
+.footer {
+    background-image: url(../img/footer_bg.jpg);
+    background-color: #181617;
+    color: #f7f7f7;
+    font-size: 23px;
+    padding: 80px 0;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__links__list {
+    list-style-type: none;
+}
+
+.footer__links__list__item {
+
+}
+
+.footer__links__list__item_link {
+    text-decoration: none;
+    color: inherit;
+}
