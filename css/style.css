@@ -112,12 +112,13 @@ body {
 .main__wrapper {
     background-color: #ccc;
     color: #333;
+    padding-bottom: 240px;
 }
 
 .latest-articles {
     text-align: center;
     padding-top: 121px;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 
 .latest-articles__title {
@@ -175,4 +176,38 @@ body {
 .latest-articles__slider__img:hover {
     cursor: pointer;
     opacity: .5;
+}
+
+.get-notified {
+    font-size: 23px;
+    text-align: center;
+}
+
+.get-notified__title {
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.get-notified__form__input {
+    font-family: 'Roboto', sans-serif;
+    width: 540px;
+    height: 60px;
+    background-color: inherit;
+    border: 1px solid #666;
+    padding-left: 20px;
+}
+
+.get-notified__form__btn {
+    width: 120px;
+    background-color: #cd6326;
+    color: #fff;
+    border: 1px solid #e39128;
+    border-radius: 0px 5px 5px 0px;
+    transition: all .3s ease-in;
+}
+
+.get-notified__form__btn:hover {
+    cursor: pointer;
+    background-color:#e39128;
 }
