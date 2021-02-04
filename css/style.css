@@ -25,7 +25,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    margin-bottom: 115px;
+    margin-bottom: 120px;
 }
 
 .logo {
@@ -42,11 +42,12 @@ body {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     font-size: 32px;
+    text-transform: uppercase;
     margin-top: 6px;
 }
 
 .nav {
-    /* align-self: start; */
+    margin-top: 17px;
 }
 
 .nav__list {
@@ -125,7 +126,7 @@ body {
 .main {
     background-color: #ccc;
     color: #333;
-    padding-bottom: 240px;
+    padding-bottom: 239px;
 }
 
 .latest-articles {
@@ -247,32 +248,75 @@ body {
     width: 1440px;
     background: url(../img/footer_bg.jpg);
     margin: 0 auto;
-    padding: 150px 0;
+    padding: 145px 0;
 }
 
 .footer__content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 359px 600px 240px;
 }
 
-.footer__links__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.footer__links {
     list-style-type: none;
     padding: 0;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 166px 187px 247px;
+    /* grid-gap: 30px; */
+    /* justify-items: center; */
+    align-items: center;
 }
 
-.footer__links__list__item {
+.footer__links__item {
 
 }
 
-.footer__links__list__item_link {
+.footer__links__item_link {
     text-decoration: none;
     color: inherit;
 }
 
-.footer__social__list {
+.footer__links__item_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer__social {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 26px;
+    margin-top: 5px;
     list-style-type: none;
+}
+
+.footer__social__item_link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity .2s ease-in;
+}
+
+.footer__social__item_link:hover {
+    opacity: .7;
+}
+
+.footer__social__item:nth-child(1) .footer__social__item_link {
+    background-image: url(../img/icons/facebook.svg);
+}
+
+.footer__social__item:nth-child(2) .footer__social__item_link {
+    background-image: url(../img/icons/instagram.svg);
+}
+
+.footer__social__item:nth-child(3) .footer__social__item_link {
+    background-image: url(../img/icons/pinterest.svg);
+}
+
+.footer__social__item:nth-child(4) .footer__social__item_link {
+    background-image: url(../img/icons/telegram.svg);
 }
