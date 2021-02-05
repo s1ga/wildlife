@@ -1,7 +1,22 @@
+:root {
+    --text-color: #f7f7f7;
+    --bg-color:#cd6326;
+    --bg-hover-color: #e39128;
+    --bg-pressed-color: #8f5613;
+    --main-text-color: #333;
+    --regular-size: var(--regular-size, 23px);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     box-sizing: border-box;
+    color: var(--text-color, #f7f7f7);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -11,14 +26,8 @@ body {
     padding-top: 14px;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .hero__wrapper {
     background: #02160b;
-    color: #f7f7f7;
 }
 
 .header {
@@ -34,7 +43,6 @@ body {
 }  
 
 .logo__title {
-    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 32px;
@@ -55,7 +63,7 @@ body {
 }
 
 .nav__list__item {
-    font-size: 23px;
+    font-size: var(--regular-size, 23px);
 }
 
 .nav__list__item:hover {
@@ -65,12 +73,11 @@ body {
 
 .nav__list__item_link {
     text-decoration: none;
-    color: #f7f7f7;
+    color: var(--text-color, #f7f7f7);
 }
 
 .nav__list__item:last-child .nav__list__item_link {
-    color: #f7f7f7;
-    border: 2px solid #cd6326;
+    border: 2px solid var(--bg-color, #cd6326);
     border-radius: 5px;
     padding: 8px 23px;
     transition: background-color .3s ease-in;
@@ -78,19 +85,19 @@ body {
 
 .nav__list__item:last-child .nav__list__item_link:hover {
     text-decoration: none;
-    background-color: #cd6326;
+    background-color:var(--bg-color, #cd6326);
 }
 
 .nav__list__item:last-child .nav__list__item_link:active {
-    background-color:#8f5613;
+    background-color: var(--bg-pressed-color, #8f5613);
 }
 
 .survival {
-    padding-bottom: 252px;
+    padding-bottom: 239px;
 }
 
 .survival__title {
-    color: #cd6326;
+    color:var(--bg-color, #cd6326);
     font-size: 48px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -99,16 +106,15 @@ body {
 
 .survival__text {
     width: 274px;
-    line-height: 27px;
     margin-bottom: 50px;
 }
 
 .survival__btn {
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    font-size: var(--regular-size, 23px);
     padding: 13px 44px;
-    background-color: #cd6326;
-    color: #f7f7f7;
+    background-color:var(--bg-color, #cd6326);
+    color: var(--text-color, #f7f7f7);
     border: none;
     outline: none;
     border-radius: 5px;
@@ -116,18 +122,18 @@ body {
 }
 
 .survival__btn:hover {
-    background-color: #e39128;
+    background-color: var(--bg-hover-color, #e39128);
     cursor: pointer;
 }
 
 .survival__btn:active {
     outline: none;
-    background-color: #8f5613;
+    background-color: var(--bg-pressed-color, #8f5613);
 }
 
 .main {
     background-color: #ccc;
-    color: #333;
+    color: var(--main-text-color, #333);
     padding-bottom: 240px;
 }
 
@@ -164,7 +170,7 @@ body {
 .latest-articles__article {
     position: relative;
     text-align: center;
-    color: #f7f7f7;
+    color: var(--text-color, #f7f7f7);
     transition: box-shadow .4s ease-in-out;
 }
 
@@ -208,7 +214,7 @@ body {
 }
 
 .get-notified {
-    font-size: 23px;
+    font-size: var(--regular-size, 23px);
     text-align: center;
 }
 
@@ -238,8 +244,8 @@ body {
 .get-notified__form__btn {
     width: 122px;
     height: 60px;
-    background-color: #cd6326;
-    color: #fff;
+    background-color:var(--bg-color, #cd6326);
+    color: var(--text-color, #f7f7f7);
     text-align: center;
     border: none;
     border-radius: 0px 5px 5px 0px;
@@ -249,17 +255,16 @@ body {
 
 .get-notified__form__btn:hover {
     cursor: pointer;
-    background-color:#e39128;
+    background-color: var(--bg-hover-color, #e39128);
 }
 
 .get-notified__form__btn:active {
-    background-color:#8f5613;
+    background-color: var(--bg-pressed-color, #8f5613);
 }
 
 .footer {
     background: #181617;
-    color: #f7f7f7;
-    font-size: 23px;
+    font-size: var(--regular-size, 23px);
 }
 
 .footer__wrapper {
@@ -307,7 +312,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #f7f7f7;
+    background-color: var(--text-color, #f7f7f7);
     background-position: center;
     background-repeat: no-repeat;
     transition: opacity .2s ease-in;
