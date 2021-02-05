@@ -213,21 +213,29 @@ body {
     margin-bottom: 60px;
 }
 
+.get-notified__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .get-notified__form__input {
     font-family: 'Roboto', sans-serif;
+    display: block;
     width: 540px;
     height: 60px;
     background-color: inherit;
     border: 1px solid #666;
     outline: none;
-    padding-left: 20px;
+    padding: 3px 0px 0px 15px;
+    margin-left: 270px;
 }
 
 .get-notified__form__btn {
-    width: 120px;
+    width: 122px;
     height: 60px;
     background-color: #cd6326;
     color: #fff;
+    text-align: center;
     border: none;
     border-radius: 0px 5px 5px 0px;
     outline: none;
