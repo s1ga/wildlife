@@ -4,11 +4,13 @@
     --bg-hover-color: #e39128;
     --bg-pressed-color: #8f5613;
     --main-text-color: #333;
-    --regular-size: var(--regular-size, 23px);
+    --regular-size: 23px;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-main, 'Open Sans');
     font-size: 18px;
     box-sizing: border-box;
     color: var(--text-color, #f7f7f7);
@@ -32,7 +34,8 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 220px 480px;
+    grid-gap: 469px;
     margin-bottom: 120px;
 }
 
@@ -43,7 +46,7 @@ body {
 }  
 
 .logo__title {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto, 'Roboto');
     font-weight: normal;
     font-size: 32px;
     text-transform: uppercase;
@@ -57,7 +60,7 @@ body {
 .nav__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 110px 158px 90px 185px;
     justify-items: center;
     align-items: center;
 }
@@ -76,15 +79,23 @@ body {
     color: var(--text-color, #f7f7f7);
 }
 
+.nav__list__item_link img:hover {
+    border-bottom: 2px solid #f7f7f7;
+}
+
 .nav__list__item:last-child .nav__list__item_link {
+    font-family: var(--font-roboto, 'Roboto');
     border: 2px solid var(--bg-color, #cd6326);
     border-radius: 5px;
-    padding: 8px 23px;
+    padding: 9px 23px;
     transition: background-color .3s ease-in;
 }
 
-.nav__list__item:last-child .nav__list__item_link:hover {
+.nav__list__item:last-child:hover {
     text-decoration: none;
+}
+
+.nav__list__item:last-child .nav__list__item_link:hover {
     background-color:var(--bg-color, #cd6326);
 }
 
@@ -110,7 +121,7 @@ body {
 }
 
 .survival__btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto, 'Roboto');
     font-size: var(--regular-size, 23px);
     padding: 13px 44px;
     background-color:var(--bg-color, #cd6326);
@@ -230,7 +241,7 @@ body {
 }
 
 .get-notified__form__input {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto, 'Roboto');
     display: block;
     width: 540px;
     height: 60px;
