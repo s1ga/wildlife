@@ -207,6 +207,10 @@ body {
     font-size: 17px;
 }
 
+.slider_left {
+    transition: visibility 0s linear 300ms;
+}
+
 .latest-articles__slider__img {
     display: block;
     margin-top: 5px;
