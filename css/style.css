@@ -172,13 +172,20 @@ body {
     grid-template-columns: 90px 1020px 90px;
 }
 
+.slider__wrapper {
+    width: 1020px;
+    overflow: hidden;
+}
+
 .latest-artcicles__article__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-auto-flow: column;
     grid-gap: 60px;
+    transition: .2s;
 }
 
 .latest-articles__article {
+    width: 300px;
     position: relative;
     text-align: center;
     color: var(--text-color, #f7f7f7);
@@ -205,10 +212,6 @@ body {
     left: 0;
     right: 0;
     font-size: 17px;
-}
-
-.slider_left {
-    transition: visibility 0s linear 300ms;
 }
 
 .latest-articles__slider__img {
