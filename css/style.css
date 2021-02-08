@@ -131,7 +131,7 @@ body {
     background-color: var(--bg-pressed-color, #8f5613);
 }
 
-.main {
+.main__wrapper {
     background-color: #ccc;
     color: var(--main-text-color, #333);
     padding-bottom: 240px;
